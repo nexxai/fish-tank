@@ -1,8 +1,7 @@
 class Starter extends Denizen {
-
   constructor(options) {
     super(options);
-    this.imageUri = '/images/volcano.jpg';
+    this.imageUri = "/images/volcano.jpg";
     this.position.y += this.height;
   }
 
@@ -13,6 +12,13 @@ class Starter extends Denizen {
   onClick(event) {
     var xVel = randRangeInt(-300, 300);
     var yVel = 400 - Math.abs(xVel);
+
+    document.body.style.backgroundColor = "red";
+
+    setTimeout(() => {
+      document.body.style.backgroundColor = "white";
+    }, 2000);
+
     var s = new Seed({
       tank: this.tank,
       position: this.position,
