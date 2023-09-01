@@ -1,7 +1,7 @@
 class Fish extends Denizen {
   constructor(options) {
     super(options);
-    this.imageUri = "/images/fish01.png";
+    this.imageUri = "/images/fish-png-11.png";
     this.maxSwimSpeed = 100;
     this.makeNewVelocity();
     this.isTasty = true;
