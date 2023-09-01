@@ -13,7 +13,8 @@ class BiteFish extends Fish {
       // We don't want to kill other BiteFish
       if (
         denizen.constructor.name.endsWith("Fish") &&
-        denizen.constructor.name !== "BiteFish"
+        denizen.constructor.name !== "BiteFish" &&
+        denizen.constructor.name !== "Shark"
       ) {
         // Is the denizen within 50 positions (pixels?) from us
         // Just using the absolute value so we don't have to check for + AND - separately
